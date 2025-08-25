@@ -8,3 +8,94 @@ a{
     color: black; /* altera a cor de todos os links das páginas */
 }
 
+  /*header*/
+  header{
+    padding: 5vw 10vw 5vw 10vw;
+    & nav{
+      display: flex;
+      justify-content: space-between;
+      left: auto;
+      align-items: center;
+
+      & ul{
+        display: flex;
+        & li{
+          margin: 0 10px 0 10px;
+         position: relative;
+
+          & ul{
+            display: none;
+          }
+        }
+        & li:hover ul{
+          display:  block;
+          position: absolute;
+        }
+      }
+      & h1{
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  header nav ul li.atual a{
+    color: #FB2E86;
+  }
+  header a{
+    color: #0D0E43;
+  }
+  /* banner */
+  section.banner{
+    display: flex;
+    padding: 5vw 10vw 5vw 10vw;
+    background-color: #F2F0FF;
+  }
+  section.banner h3{
+    color: #FB2E86;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  section.banner h2{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  section.banner p{
+   color: #8A8FB9;
+  }
+
+  section.banner p button{
+    background-color: #FB2E86;
+    color: white;
+    padding: 16px 28px 16px 28px;
+    margin: 0 5px;
+    border-radius:  2px;
+    margin-top: 70px;
+  }
+
+  section.banner div.textos{
+    padding-right: 4vw ;
+  }
+ 
+  /* produtos */
+  
+  section.produtos{
+    padding: 5vw 10vw 5vw 10vw;
+  }
+  section.produtos h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #1A0B5B;
+  }
+  
+  section.produtos ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  section.produtos ul li{
+    width: 30%;
+  }
